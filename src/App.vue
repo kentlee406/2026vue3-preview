@@ -26,7 +26,7 @@ const filteredProducts = computed(() =>
   <ul>
     <li v-for="product in filteredProducts" :key="product.id">
       {{
-        `產品類別：${product.category}，產品名稱：${product.title}，特價：${product.price}，折扣率：${((product.price / product.origin_price) * 100).toFixed(2)}%`
+        `產品類別：${product.category}，產品名稱：${product.title}，特價：${product.price}，折扣率：${((product.price / product.origin_price) * 100).toFixed(1)}%`
       }}
     </li>
   </ul>
